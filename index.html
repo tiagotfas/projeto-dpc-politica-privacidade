@@ -1,21 +1,30 @@
+```html
 <!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Política de Privacidade — Projeto APROVAÇÃO</title>
+<meta name="description" content="Política de Privacidade do Projeto APROVAÇÃO, aplicativo de organização e acompanhamento de estudos para concursos públicos.">
 
 <style>
 :root {
   --navy: #0b1730;
+  --navy-light: #132b52;
   --gold: #c9a227;
   --bg: #f5f7fa;
   --text: #202733;
   --muted: #5f6875;
+  --border: #e7eaf0;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,23 +32,24 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 header {
-  background: linear-gradient(135deg, #071126, #132b52);
+  background: linear-gradient(135deg, #071126, var(--navy-light));
   color: #fff;
   padding: 42px 20px;
 }
 
 .wrap {
-  max-width: 900px;
-  margin: auto;
+  width: min(900px, 100%);
+  margin-inline: auto;
 }
 
 header h1 {
-  margin: 0 0 8px;
-  font-size: 32px;
+  margin: 0 0 10px;
+  font-size: clamp(25px, 4vw, 34px);
+  line-height: 1.25;
 }
 
 header p {
@@ -49,17 +59,29 @@ header p {
 
 main {
   background: #fff;
-  margin: 28px auto 50px;
+  margin: 28px auto 45px;
   padding: 38px 42px;
   border-radius: 14px;
-  box-shadow: 0 5px 25px rgba(0,0,0,.07);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, .07);
 }
 
 h2 {
   color: var(--navy);
-  margin-top: 30px;
-  border-bottom: 1px solid #e7eaf0;
-  padding-bottom: 7px;
+  margin-top: 34px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+h3 {
+  color: var(--navy);
+  margin-top: 24px;
+  font-size: 18px;
+}
+
+p {
+  margin: 13px 0;
 }
 
 .meta {
@@ -70,12 +92,26 @@ h2 {
 .notice {
   border-left: 4px solid var(--gold);
   background: #faf7ea;
-  padding: 14px 18px;
-  margin: 20px 0;
+  padding: 15px 18px;
+  margin: 22px 0;
 }
 
 ul {
   padding-left: 24px;
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+a {
+  color: #174ea6;
+  overflow-wrap: anywhere;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
 }
 
 footer {
@@ -86,13 +122,17 @@ footer {
 }
 
 @media (max-width: 600px) {
-  main {
-    margin: 15px 10px 30px;
-    padding: 24px 20px;
+  header {
+    padding: 30px 20px;
   }
 
-  header h1 {
-    font-size: 26px;
+  main {
+    margin: 15px 10px 28px;
+    padding: 25px 20px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 }
 </style>
@@ -101,227 +141,303 @@ footer {
 <body>
 
 <header>
-<div class="wrap">
-<h1>Política de Privacidade — Projeto DPC</h1>
-<p>Aplicativo de organização, registro e acompanhamento de estudos.</p>
-</div>
+  <div class="wrap">
+    <h1>Política de Privacidade — Projeto APROVAÇÃO</h1>
+    <p>Aplicativo de organização, registro e acompanhamento de estudos para concursos públicos.</p>
+  </div>
 </header>
 
 <main class="wrap">
 
 <p class="meta">
-<strong>Última atualização:</strong> 5 de outubro de 2026
+  <strong>Última atualização:</strong> 9 de outubro de 2026
 </p>
 
 <div class="notice">
-Esta Política de Privacidade explica como o Projeto DPC trata as informações utilizadas durante o uso do aplicativo.
+  Esta Política de Privacidade explica como o Projeto APROVAÇÃO trata as informações utilizadas durante o uso do aplicativo, incluindo o armazenamento local e, quando disponibilizado e ativado pelo usuário, o backup no Google Drive.
 </div>
 
 <h2>1. Identificação do aplicativo</h2>
 
-<p><strong>Aplicativo:</strong> Projeto DPC</p>
+<p><strong>Aplicativo:</strong> Projeto APROVAÇÃO</p>
 
-<p><strong>Desenvolvedor:</strong> Projeto DPC</p>
+<p><strong>Desenvolvedor:</strong> Projeto APROVAÇÃO</p>
 
-<p><strong>Contato de privacidade:</strong>tiagotfas@gmail.com</p>
+<p>
+  <strong>Contato de privacidade:</strong>
+  <a href="mailto:tiagotfas@gmail.com">tiagotfas@gmail.com</a>
+</p>
 
+<p>
+  Esta política aplica-se ao aplicativo Projeto APROVAÇÃO e às funcionalidades nele disponibilizadas.
+</p>
 
 <h2>2. Informações tratadas pelo aplicativo</h2>
 
 <p>
-O Projeto DPC foi desenvolvido para permitir que o usuário organize e acompanhe sua preparação para concursos.
-Dependendo dos recursos utilizados, o aplicativo pode armazenar no dispositivo informações como:
+  O Projeto APROVAÇÃO permite que o usuário organize e acompanhe sua preparação para concursos públicos. Conforme os recursos utilizados, o aplicativo pode tratar informações como:
 </p>
 
 <ul>
-<li>nome informado pelo usuário para personalização da experiência;</li>
-<li>sessões de estudo, incluindo matéria, tipo de estudo, duração, data e informações registradas pelo usuário;</li>
-<li>tarefas e informações de planejamento inseridas pelo usuário;</li>
-<li>preferências de configuração, como tema e meta de estudos;</li>
-<li>informações necessárias para manter o funcionamento das funcionalidades do aplicativo;</li>
-<li>informações relacionadas à compra ou à verificação de acesso às funcionalidades Premium, quando o usuário realizar uma compra pelo Google Play.</li>
+  <li>nome informado pelo usuário para personalização da experiência;</li>
+  <li>sessões de estudo, matérias, assuntos, datas, duração e modalidades de estudo;</li>
+  <li>tarefas, metas, cronogramas, revisões e informações de planejamento inseridas pelo usuário;</li>
+  <li>preferências de configuração, como tema, concurso selecionado e metas de estudo;</li>
+  <li>dados necessários para manter as funcionalidades e o histórico de utilização do aplicativo;</li>
+  <li>informações relacionadas à compra ou à verificação de acesso às funcionalidades Premium, quando aplicável;</li>
+  <li>informações técnicas necessárias para executar as operações de backup e restauração, quando esses recursos forem utilizados.</li>
 </ul>
 
+<p>
+  O aplicativo não deve ser utilizado para inserir senhas, dados bancários ou outras informações pessoais desnecessárias à organização dos estudos.
+</p>
 
-<h2>3. Armazenamento dos dados de estudo</h2>
+<h2>3. Armazenamento local dos dados</h2>
 
 <p>
-Os dados de estudo e de configuração são armazenados localmente no dispositivo do usuário,
-no armazenamento interno utilizado pelo aplicativo.
+  Os dados de estudo e de configuração são armazenados localmente no dispositivo, no espaço de armazenamento utilizado pelo aplicativo.
 </p>
 
 <p>
-O Projeto DPC não mantém, por conta própria, uma conta de usuário ou um servidor próprio
-para sincronizar o histórico de estudos.
-</p>
-
-
-<h2>4. Backup e restauração</h2>
-
-<p>
-O aplicativo permite que o usuário exporte um arquivo de backup e,
-posteriormente, importe esse arquivo para restaurar seus dados.
+  O Projeto APROVAÇÃO não mantém, por conta própria, um servidor central de contas de usuário ou um banco de dados remoto destinado à sincronização do histórico de estudos.
 </p>
 
 <p>
-O arquivo de backup é criado a partir de uma ação do usuário e pode ser salvo
-no local escolhido pelo próprio usuário.
+  A desinstalação do aplicativo ou a limpeza de seus dados pode remover as informações armazenadas localmente. Por isso, o usuário deve realizar e verificar um backup antes de desinstalar o aplicativo ou trocar de dispositivo, caso deseje conservar seu histórico.
+</p>
+
+<h2>4. Backup e restauração pelo Google Drive</h2>
+
+<p>
+  Quando a funcionalidade estiver disponível, o usuário poderá autorizar o aplicativo a criar e recuperar cópias de segurança de seus dados no Google Drive.
+</p>
+
+<h3>4.1. Autorização da conta Google</h3>
+
+<p>
+  Para utilizar a integração, o usuário poderá ser solicitado a selecionar uma conta Google e autorizar o acesso solicitado pelo aplicativo. A autorização é realizada pelo mecanismo de autenticação do Google.
 </p>
 
 <p>
-O Projeto DPC não recebe nem hospeda esse arquivo.
+  O aplicativo utiliza o escopo de acesso destinado à área privada de dados do próprio aplicativo no Google Drive. Esse acesso não equivale a uma autorização geral para ler, alterar ou excluir todos os documentos pessoais do usuário.
 </p>
 
 <p>
-O usuário é responsável pelo local escolhido para armazenar o backup
-e pela proteção do arquivo contra acesso não autorizado.
+  A utilização do backup no Drive depende da configuração da integração, da autorização válida e da disponibilidade dos serviços do Google. O usuário poderá deixar de utilizar o recurso revogando as permissões concedidas à integração.
 </p>
 
-
-<h2>5. Google Play e funcionalidades Premium</h2>
+<h3>4.2. Dados enviados ao Drive</h3>
 
 <p>
-O Projeto DPC pode oferecer funcionalidades Premium mediante compra única
-realizada por meio do Google Play.
+  Ao solicitar um backup, o aplicativo pode enviar ao Google Drive um arquivo contendo os dados de estudo e de configuração incluídos na cópia de segurança.
 </p>
 
 <p>
-O processamento do pagamento é realizado pela infraestrutura do Google Play.
-O aplicativo utiliza os mecanismos disponibilizados pelo Google Play
-para verificar o estado da compra e liberar as funcionalidades correspondentes.
+  O arquivo destina-se à recuperação dos dados do próprio usuário. O conteúdo pode incluir sessões de estudo, planejamento, tarefas, preferências e outras informações mantidas pelo aplicativo e selecionadas para compor o backup.
 </p>
 
 <p>
-O Projeto DPC não solicita nem armazena diretamente dados de cartão de crédito,
-débito ou outros dados financeiros completos utilizados no pagamento.
+  O backup é armazenado na área de dados do aplicativo associada à conta Google autorizada. Ele não é necessariamente exibido na pasta comum de arquivos do Google Drive.
 </p>
 
-
-<h2>6. Compartilhamento de informações</h2>
+<h3>4.3. Finalidade do backup</h3>
 
 <p>
-Os dados de estudo armazenados localmente pelo aplicativo não são vendidos
-nem compartilhados pelo Projeto DPC com terceiros para fins de publicidade ou marketing.
+  A finalidade do backup é permitir que o usuário recupere seus dados em situações como troca de dispositivo, reinstalação do aplicativo ou perda das informações armazenadas localmente.
 </p>
 
 <p>
-Quando aplicável, informações relacionadas às compras e à licença Premium
-podem ser processadas pela infraestrutura do Google Play de acordo com
-as políticas e práticas de privacidade do Google.
+  O backup não deve ser considerado uma sincronização em tempo real entre dispositivos. A recuperação depende da existência de uma cópia válida e de sua compatibilidade com a versão do aplicativo utilizada.
 </p>
 
-
-<h2>7. Anúncios</h2>
-
-<p>
-O Projeto DPC não contém anúncios publicitários.
-</p>
-
-
-<h2>8. Contas e login</h2>
+<h3>4.4. Backup automático</h3>
 
 <p>
-O Projeto DPC não exige que o usuário crie uma conta dentro do aplicativo
-para utilizar seus recursos de estudo.
-</p>
-
-
-<h2>9. Permissões e acesso ao dispositivo</h2>
-
-<p>
-O aplicativo utiliza os recursos necessários ao funcionamento de suas funcionalidades.
-O acesso a arquivos para exportação ou importação de backups ocorre mediante
-as ferramentas do sistema Android e por ação do usuário.
-</p>
-
-
-<h2>10. Segurança</h2>
-
-<p>
-Os dados de estudo mantidos pelo aplicativo são armazenados no armazenamento
-interno do aplicativo no dispositivo.
+  Caso o aplicativo disponibilize a opção de backup automático, o usuário poderá ativá-la ou desativá-la conforme as opções apresentadas na interface.
 </p>
 
 <p>
-O Projeto DPC adota medidas técnicas compatíveis com o funcionamento do Android
-para evitar acesso casual aos dados por outros aplicativos.
+  Quando ativado, o recurso poderá enviar cópias de segurança após determinadas alterações ou em intervalos definidos pela implementação do aplicativo. O envio depende de condições técnicas, como conectividade, autorização válida e disponibilidade dos serviços envolvidos.
 </p>
 
 <p>
-Nenhum método de armazenamento eletrônico é absolutamente seguro.
-O usuário também deve proteger o próprio dispositivo e os arquivos de backup
-que decidir exportar.
+  A ativação do recurso não garante que todas as alterações sejam enviadas imediatamente. O usuário deve verificar a indicação de conclusão ou a data do último backup informado pelo aplicativo.
 </p>
 
-
-<h2>11. Retenção e exclusão de dados</h2>
+<h3>4.5. Retenção e exclusão dos backups</h3>
 
 <p>
-Os dados de estudo permanecem no dispositivo enquanto forem mantidos pelo usuário
-ou pelo aplicativo.
+  O aplicativo poderá manter um número limitado de cópias de segurança, conforme a funcionalidade implementada. Quando houver uma opção de gerenciamento ou exclusão de backups, o usuário poderá utilizá-la para solicitar a remoção das cópias mantidas pela integração.
 </p>
 
 <p>
-O usuário pode utilizar os recursos de gerenciamento de dados disponíveis
-no aplicativo, incluindo a opção de limpar os dados e a possibilidade
-de remover o aplicativo do dispositivo.
+  A exclusão dos backups remotos não significa necessariamente a exclusão dos dados que continuam armazenados localmente no dispositivo. Da mesma forma, apagar os dados locais não garante a exclusão de cópias já armazenadas no Drive.
 </p>
 
 <p>
-Arquivos de backup exportados pelo usuário podem permanecer no local escolhido
-pelo usuário mesmo após a remoção do aplicativo.
-Esses arquivos devem ser excluídos pelo próprio usuário quando não forem mais necessários.
+  Se o usuário revogar a autorização do Google, o aplicativo poderá perder a capacidade de acessar ou excluir os backups existentes por meio dessa integração. Nessa situação, o usuário poderá precisar restabelecer a autorização para administrar as cópias, quando a funcionalidade permitir.
 </p>
 
-
-<h2>12. Privacidade de crianças</h2>
+<h2>5. Serviços do Google</h2>
 
 <p>
-O Projeto DPC não é direcionado especificamente a crianças.
+  A integração com o Google Drive envolve o processamento de informações pelos serviços do Google necessários à autenticação, autorização, armazenamento e recuperação dos arquivos de backup.
 </p>
 
 <p>
-O aplicativo é destinado a pessoas que estejam se preparando para concursos públicos
-e não solicita informações pessoais de crianças para criação de contas.
+  O tratamento realizado pelo Google está sujeito aos termos e à política de privacidade do próprio Google:
 </p>
 
-
-<h2>13. Alterações nesta Política</h2>
+<ul>
+  <li>
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a>
+  </li>
+  <li>
+    <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Termos de Serviço do Google</a>
+  </li>
+</ul>
 
 <p>
-Esta Política de Privacidade poderá ser atualizada quando houver mudanças relevantes
-no aplicativo, nas funcionalidades oferecidas ou nas práticas de tratamento de dados.
+  O Projeto APROVAÇÃO não vende os dados de estudo dos usuários. O uso do Google Drive para backup tem como finalidade disponibilizar a funcionalidade de cópia de segurança e recuperação dos dados.
 </p>
 
-<p>
-A versão atualizada será disponibilizada nesta mesma página,
-com a respectiva data de atualização.
-</p>
-
-
-<h2>14. Contato</h2>
+<h2>6. Google Play e funcionalidades Premium</h2>
 
 <p>
-Para dúvidas, solicitações ou questões relacionadas à privacidade e ao tratamento de dados:
+  O aplicativo pode oferecer funcionalidades Premium mediante compra realizada por meio do Google Play, conforme as opções disponibilizadas na versão instalada.
 </p>
 
 <p>
-<strong>E-mail:</strong> tiagotfas@gmail.com
+  O processamento do pagamento é realizado pela infraestrutura do Google Play. O aplicativo pode utilizar os mecanismos disponibilizados pelo Google Play para verificar o estado da compra e liberar as funcionalidades correspondentes.
 </p>
 
+<p>
+  O Projeto APROVAÇÃO não solicita nem armazena diretamente os dados completos do cartão de crédito ou débito utilizados no pagamento.
+</p>
 
-<h2>15. Ciência</h2>
+<h2>7. Compartilhamento de informações</h2>
 
 <p>
-Ao utilizar o Projeto DPC, o usuário declara estar ciente desta Política de Privacidade
-e das práticas nela descritas.
+  O Projeto APROVAÇÃO não vende dados pessoais dos usuários.
+</p>
+
+<p>
+  Os dados armazenados localmente não são enviados automaticamente a um servidor próprio do desenvolvedor para formar um histórico centralizado.
+</p>
+
+<p>
+  Quando o usuário utiliza o backup no Google Drive, os dados incluídos no arquivo de backup são transmitidos ao Google para a prestação desse serviço. Informações relacionadas a compras podem ser processadas pelo Google Play conforme necessário para o funcionamento das funcionalidades Premium.
+</p>
+
+<p>
+  Os dados também poderão ser tratados quando isso for necessário para cumprir obrigações legais ou atender a solicitações válidas de autoridades competentes.
+</p>
+
+<h2>8. Anúncios e publicidade</h2>
+
+<p>
+  O Projeto APROVAÇÃO não utiliza publicidade comportamental própria para vender ou compartilhar o histórico de estudos dos usuários.
+</p>
+
+<p>
+  Caso futuras versões passem a utilizar serviços de anúncios ou outras ferramentas de terceiros que alterem o tratamento de dados, esta política deverá ser atualizada antes da disponibilização do novo recurso.
+</p>
+
+<h2>9. Contas e login</h2>
+
+<p>
+  O uso das funcionalidades de estudo não exige necessariamente a criação de uma conta própria do Projeto APROVAÇÃO.
+</p>
+
+<p>
+  A integração com o Google Drive pode solicitar a seleção e a autorização de uma conta Google exclusivamente para as operações relacionadas ao backup, conforme a funcionalidade disponibilizada.
+</p>
+
+<h2>10. Permissões e acesso ao dispositivo</h2>
+
+<p>
+  O aplicativo utiliza os recursos necessários ao funcionamento de suas funcionalidades. O acesso a arquivos locais para importação ou exportação pode ocorrer por meio das ferramentas do Android e mediante ação do usuário.
+</p>
+
+<p>
+  As operações de backup no Google Drive dependem das permissões concedidas pelo usuário e dos mecanismos de autenticação utilizados pela integração.
+</p>
+
+<h2>11. Segurança das informações</h2>
+
+<p>
+  Os dados locais são mantidos no espaço de armazenamento utilizado pelo aplicativo no dispositivo. Os arquivos enviados ao Google Drive são transmitidos por meio da conexão segura disponibilizada pelos serviços utilizados.
+</p>
+
+<p>
+  O desenvolvedor busca adotar medidas técnicas compatíveis com a finalidade do aplicativo. Entretanto, nenhum método de armazenamento ou transmissão eletrônica oferece garantia absoluta de segurança.
+</p>
+
+<p>
+  O usuário também deve proteger seu dispositivo e sua conta Google, utilizar bloqueios de acesso adequados e não compartilhar arquivos de backup com pessoas não autorizadas.
+</p>
+
+<h2>12. Retenção e exclusão de dados</h2>
+
+<p>
+  Os dados armazenados localmente permanecem no dispositivo até que sejam removidos pelo usuário, pelo próprio funcionamento do sistema ou pela desinstalação ou limpeza dos dados do aplicativo.
+</p>
+
+<p>
+  Os backups remotos permanecem disponíveis conforme as operações de retenção e exclusão efetivamente implementadas e enquanto puderem ser acessados pela integração autorizada.
+</p>
+
+<p>
+  Para solicitar esclarecimentos sobre privacidade ou sobre os dados tratados pelo aplicativo, o usuário pode entrar em contato pelo endereço informado nesta política.
+</p>
+
+<p>
+  O usuário deve considerar que excluir dados locais, desinstalar o aplicativo, revogar a autorização Google e excluir backups remotos são ações distintas, que podem produzir efeitos diferentes.
+</p>
+
+<h2>13. Privacidade de crianças e adolescentes</h2>
+
+<p>
+  O Projeto APROVAÇÃO é destinado à organização dos estudos para concursos públicos e não é desenvolvido especificamente para crianças.
+</p>
+
+<p>
+  O aplicativo não exige a criação de uma conta própria nem solicita informações de crianças para esse fim. Caso sejam identificadas informações pessoais tratadas indevidamente, o responsável poderá entrar em contato para solicitar orientação e providências cabíveis.
+</p>
+
+<h2>14. Alterações nesta Política</h2>
+
+<p>
+  Esta Política de Privacidade poderá ser atualizada quando houver mudanças relevantes no aplicativo, nos serviços utilizados ou nas práticas de tratamento de dados.
+</p>
+
+<p>
+  A versão vigente será disponibilizada nesta mesma página, com a respectiva data de atualização.
+</p>
+
+<h2>15. Contato e solicitações de privacidade</h2>
+
+<p>
+  Para dúvidas, solicitações ou questões relacionadas à privacidade e ao tratamento de dados, entre em contato:
+</p>
+
+<p>
+  <strong>E-mail:</strong>
+  <a href="mailto:tiagotfas@gmail.com">tiagotfas@gmail.com</a>
+</p>
+
+<h2>16. Disposições finais</h2>
+
+<p>
+  Esta política deve ser lida em conjunto com as informações apresentadas pelo aplicativo durante o uso de suas funcionalidades. Quando um recurso opcional envolver o envio de dados a um serviço externo, o usuário deverá receber informações compatíveis com o funcionamento efetivo desse recurso.
 </p>
 
 </main>
 
 <footer>
-Projeto DPC — Política de Privacidade
+  Projeto APROVAÇÃO — Política de Privacidade
 </footer>
 
 </body>
 </html>
+```
